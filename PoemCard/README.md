@@ -4,7 +4,7 @@
 
 # 实现方案
 
-首先利用`.csv`文件存储人名，根据.csv文件中的项构建空字典。读入《全唐诗》的`.txt`文件，根据正则表达式找出人名中的每个字的诗句，同时将其诗名与这句诗组成一个list。再将这些list组成一个list。使用`random`函数从每个字的list中抽取一句作为诗句。将其存入之前的空字典中。这样，在这个字典中，.csv文件中的每一项对应字典的一个key，一个key对应的一个list，存放的是4个list，分别对应“赠”以及人名的三个字的诗句和诗名。
+首先利用`.csv`文件存储人名，根据.csv文件中的项构建空字典。读入《全唐诗》的`.txt`文件，根据正则表达式找出人名中的每个字的诗句，同时将其诗名与这句诗组成一个list。再将这些list组成一个list。使用`random`函数从每个字的list中抽取一句作为诗句。将其存入之前的空字典中。这样，在这个字典中，`.csv`文件中的每一项对应字典的一个key，一个key对应的一个list，存放的是4个list，分别对应“赠”以及人名的三个字的诗句和诗名。
 
 之后使用`pillow`库构建图片。事先从晚上下好5张图片作为背景，利用`random`函数挑选其中一张作为一张卡片的背景。利用`pillow`的`resize`调整大小，用`pillow.ImageDraw`库生成对应文字最终保存。
 
@@ -98,9 +98,11 @@ for name in names_dict:
 
 # 效果展示
 
-![赠郭泽宇](card/赠郭泽宇.png)
+![赠刘德华](https://img-blog.csdnimg.cn/2021061717013446.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM3NDg4OTc=,size_16,color_FFFFFF,t_70#pic_center)
 
-![赠雪峰连](card/赠雪峰连.png)
+
+![赠林场就](https://img-blog.csdnimg.cn/20210617170150187.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM3NDg4OTc=,size_16,color_FFFFFF,t_70#pic_center)
+
 
 # 心得体会
 
@@ -110,6 +112,6 @@ for name in names_dict:
 
 本作业已上传至Github以及Gitee，希望各位能点个star再走 :smile:。
 
-(https://github.com/GLORYFeonix/Python_Learning_Homework)
+[GitHub](https://github.com/GLORYFeonix/Python_Learning_Homework)
 
-(https://gitee.com/gzy8810/Python_Learning_Homework)
+[Gitee](https://gitee.com/gzy8810/Python_Learning_Homework)
