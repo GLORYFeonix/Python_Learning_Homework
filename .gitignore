@@ -1,0 +1,3 @@
+*.class
+*.vscode
+__pycache__
