@@ -1,3 +1,10 @@
+# Python程序设计 作业
+
+4. [数字照片墙](https://blog.csdn.net/u013748897/article/details/117996577)
+5. [送你一首集句诗](https://blog.csdn.net/u013748897/article/details/118028280)
+
+@[TOC](Python程序设计 作业5 送你一首集句诗)
+
 # 设计思路：
 
 利用字典存放每个人对应的诗句和诗名，用pillow库构建图片。

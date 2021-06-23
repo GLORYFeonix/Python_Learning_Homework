@@ -1,4 +1,11 @@
-﻿# 设计思路：
+﻿# Python程序设计 作业
+
+4. [数字照片墙](https://blog.csdn.net/u013748897/article/details/117996577)
+5. [送你一首集句诗](https://blog.csdn.net/u013748897/article/details/118028280)
+
+@[TOC](Python程序设计 作业4 数字照片墙)
+
+# 设计思路：
 
 使用`Pillow`分别构建同样大小的图片`text.jpg`、`wall.jpg`，再根据两张图片的相同位置的像素情况构建`final.jpg`
 
