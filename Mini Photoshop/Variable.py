@@ -6,6 +6,7 @@ DEFAULT_HEIGHT = 600
 
 
 class Variable:
+    # 全局变量
     image = None
     imagelabel = None
     width = 0
@@ -42,7 +43,3 @@ def set_imagelabel(imagelabel):
 
 def get_imagelabel():
     return Variable.imagelabel
-
-
-def set_save(path):
-    return

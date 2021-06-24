@@ -1,7 +1,10 @@
 # Python程序设计 作业
 
-4. [数字照片墙](https://blog.csdn.net/u013748897/article/details/117996577)
-5. [送你一首集句诗](https://blog.csdn.net/u013748897/article/details/118028280)
+1. 海龟绘图
+2. 文本处理
+3. [数字照片墙](https://blog.csdn.net/u013748897/article/details/117996577)
+4. [送你一首集句诗](https://blog.csdn.net/u013748897/article/details/118028280)
+5. [简化的PS](https://blog.csdn.net/u013748897/article/details/118147738)
 
 @[TOC](Python程序设计 作业5 送你一首集句诗)
 
