@@ -1,4 +1,5 @@
 import sys
+import os
 
 from PIL import Image
 from PyQt5.QtGui import QIcon
@@ -85,8 +86,9 @@ class PS(QMainWindow):
         # 打开文件事件
         imagelabel = Variable.get_imagelabel()  # 从全局变量中获取QLabel
 
+        path = os.getcwd()  # 获取当前目录
         fname, _ = QFileDialog.getOpenFileName(
-            self, '打开图片', '/', "Image files (*.jpg *.png)")  # 打开对话框来进行文件选择，获得文件路径
+            self, '打开图片', path, "Image files (*.jpg *.png)")  # 打开对话框来进行文件选择，获得文件路径
 
         if fname:   # 防止文件路径为空导致错误，设置一个条件来判断是否执行，之后的其他事件与此相同
             image = Image.open(fname)   # 使用Pillow库来打开文件
@@ -127,8 +129,9 @@ class PS(QMainWindow):
 
     def SaveEvent(self):
         # 保存文件事件
+        path = os.getcwd()  # 获取当前目录
         filename, _ = QFileDialog.getSaveFileName(
-            self, "文件保存", '/', "Image files (*.jpg *.png)")
+            self, "文件保存", path, "Image files (*.jpg *.png)")
         if filename:
             image = Variable.get_image()    # 获取全局变量中的image进行操作
             process.change_save(filename)   # 改变保存标志
